@@ -8,6 +8,53 @@
     grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
     gap: 2em;
   }
+  .nav-menu {
+    gap: 1em;
+  }
+}
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(255,255,255,0.97);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    padding: 1rem 0;
+    z-index: 200;
+  }
+  .nav-menu.active {
+    display: flex;
+  }
+  .hamburger {
+    display: flex;
+  }
+  .nav-container {
+    position: relative;
+  }
+  .features-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .feature-card {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+  .footer-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 }
 @media (max-width: 600px) {
   .container {
@@ -25,5 +72,11 @@
   }
   .screenshot-card {
     padding: 1rem;
+  }
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
   }
 } 
