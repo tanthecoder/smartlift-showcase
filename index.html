@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorkoutMix - Fitness Tracking App</title>
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="navigation.css">
+    <link rel="stylesheet" href="hero.css">
+    <link rel="stylesheet" href="screenshots.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-dumbbell"></i>
+                <span>WorkoutMix</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#screenshots">Screenshots</a></li>
+                <li><a href="#tech">Technology</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Transform Your Fitness Journey with
+                    <span class="gradient-text">WorkoutMix</span>
+                </h1>
+                <p class="hero-subtitle">
+                    The ultimate React Native fitness tracking app with AI-powered features, 
+                    comprehensive workout management, and real-time session tracking.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('features')">
+                        <i class="fas fa-play"></i>
+                        Explore Features
+                    </button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('screenshots')">
+                        <i class="fas fa-mobile-alt"></i>
+                        View App
+                    </button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="phone-mockup">
+                    <div class="phone-screen">
+                        <div class="app-header">
+                            <div class="app-title">WorkoutMix</div>
+                            <div class="app-status">Active Session</div>
+                        </div>
+                        <div class="app-content">
+                            <div class="workout-card">
+                                <div class="exercise-name">Bench Press</div>
+                                <div class="set-info">Set 3 of 4</div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 75%"></div>
+                                </div>
+                                <div class="stats">
+                                    <span>12 reps</span>
+                                    <span>185 lbs</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Powerful Features</h2>
+                <p>Everything you need for a complete fitness tracking experience</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up">
+                    <div class="feature-icon">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <h3>Workout Routines</h3>
+                    <p>Create and manage custom workout routines with detailed exercise parameters including sets, reps, weight, and rest time.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Session Tracking</h3>
+                    <p>Track your workout sessions in real-time with detailed set logging, progress monitoring, and performance analytics.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI-Powered Features</h3>
+                    <p>Smart exercise categorization with 100+ fitness categories, AI-powered suggestions, and intelligent workout recommendations.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Exercise Library</h3>
+                    <p>Comprehensive database of exercises with detailed instructions, muscle group targeting, and difficulty levels.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <i class="fas fa-moon"></i>
+                    </div>
+                    <h3>Dark Mode</h3>
+                    <p>Beautiful dark and light themes with system-aware preferences for comfortable viewing in any environment.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-icon">
+                        <i class="fas fa-sync"></i>
+                    </div>
+                    <h3>Sync & Backup</h3>
+                    <p>Seamless data synchronization with Supabase backend, offline support, and automatic cloud backup.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Section -->
+    <section id="screenshots" class="screenshots">
+        <div class="container">
+            <div class="section-header">
+                <h2>App Screenshots</h2>
+                <p>See WorkoutMix in action across different screens</p>
+            </div>
+            <div class="screenshots-grid">
+                <!-- Workout Routines -->
+                <div class="screenshot-card" data-aos="fade-right">
+                    <div class="phone-mockup">
+                        <div class="phone-screen">
+                            <div class="app-header">
+                                <div class="app-title" style="display:flex;align-items:center;gap:6px;"><span style="color:#3B82F6;font-size:18px;">🏋️‍♂️</span>Routines</div>
+                                <div class="app-status" style="background:#2563EB;color:#fff;">My Workouts</div>
+                            </div>
+                            <div class="app-content" style="flex-direction:column;align-items:stretch;gap:10px;background:#F3F4F6;padding:0;">
+                                <div style="background:#fff;border-radius:14px 14px 0 0;padding:14px 16px 10px 16px;box-shadow:0 2px 8px #e5e7eb;margin-bottom:0;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #E5E7EB;">
+                                    <div>
+                                        <div style="font-weight:700;font-size:16px;">Push Day</div>
+                                        <div style="font-size:12px;color:#3B82F6;font-weight:600;margin-top:2px;">Upper Body</div>
+                                    </div>
+                                    <span style="color:#9CA3AF;font-size:20px;">✏️</span>
+                                </div>
+                                <div style="background:#F9FAFB;padding:10px 16px 10px 32px;border-bottom:1px solid #E5E7EB;display:flex;align-items:center;gap:8px;">
+                                    <span style="font-size:14px;color:#10B981;">•</span>
+                                    <span style="font-size:14px;">Bench Press</span>
+                                    <span style="background:#3B82F6;color:#fff;border-radius:6px;padding:2px 8px;font-size:11px;margin-left:auto;">Chest</span>
+                                </div>
+                                <div style="background:#F9FAFB;padding:10px 16px 10px 32px;border-bottom:1px solid #E5E7EB;display:flex;align-items:center;gap:8px;">
+                                    <span style="font-size:14px;color:#10B981;">•</span>
+                                    <span style="font-size:14px;">Overhead Press</span>
+                                    <span style="background:#F59E42;color:#fff;border-radius:6px;padding:2px 8px;font-size:11px;margin-left:auto;">Shoulders</span>
+                                </div>
+                                <div style="background:#fff;border-radius:0 0 14px 14px;padding:14px 16px 10px 16px;box-shadow:0 2px 8px #e5e7eb;margin-bottom:0;display:flex;align-items:center;justify-content:space-between;">
+                                    <div>
+                                        <div style="font-weight:700;font-size:16px;">Pull Day</div>
+                                        <div style="font-size:12px;color:#10B981;font-weight:600;margin-top:2px;">Back & Biceps</div>
+                                    </div>
+                                    <span style="color:#9CA3AF;font-size:20px;">✏️</span>
+                                </div>
+                                <div style="background:#F9FAFB;padding:10px 16px 10px 32px;border-bottom:1px solid #E5E7EB;display:flex;align-items:center;gap:8px;">
+                                    <span style="font-size:14px;color:#10B981;">•</span>
+                                    <span style="font-size:14px;">Deadlift</span>
+                                    <span style="background:#F59E42;color:#fff;border-radius:6px;padding:2px 8px;font-size:11px;margin-left:auto;">Back</span>
+                                </div>
+                                <div style="background:#fff;border-radius:14px;padding:14px 16px 10px 16px;box-shadow:0 2px 8px #e5e7eb;margin-bottom:0;display:flex;align-items:center;justify-content:space-between;">
+                                    <div>
+                                        <div style="font-weight:700;font-size:16px;">Legs & Core</div>
+                                        <div style="font-size:12px;color:#F59E42;font-weight:600;margin-top:2px;">Lower Body</div>
+                                    </div>
+                                    <span style="color:#9CA3AF;font-size:20px;">✏️</span>
+                                </div>
+                                <div style="background:#F9FAFB;padding:10px 16px 10px 32px;display:flex;align-items:center;gap:8px;">
+                                    <span style="font-size:14px;color:#10B981;">•</span>
+                                    <span style="font-size:14px;">Lunges</span>
+                                    <span style="background:#10B981;color:#fff;border-radius:6px;padding:2px 8px;font-size:11px;margin-left:auto;">Legs</span>
+                                </div>
+                                <button style="background:#10B981;color:#fff;border:none;border-radius:8px;padding:12px 0;font-size:16px;font-weight:700;margin:14px 16px 0 16px;box-shadow:0 2px 8px #10B981;display:flex;align-items:center;justify-content:center;gap:8px;"><span style="font-size:18px;">▶️</span>Start Workout</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Workout Session -->
+                <div class="screenshot-card" data-aos="fade-left">
+                    <div class="phone-mockup">
+                        <div class="phone-screen">
+                            <div class="app-header">
+                                <div class="app-title" style="display:flex;align-items:center;gap:6px;"><span style="color:#10B981;font-size:18px;">🏃‍♂️</span>Session</div>
+                                <div class="app-status" style="background:#10B981;color:#fff;">Active</div>
+                            </div>
+                            <div class="app-content" style="flex-direction:column;align-items:stretch;gap:10px;background:#F3F4F6;padding:0;">
+                                <div style="background:#fff;border-radius:16px;padding:18px 16px 14px 16px;box-shadow:0 2px 8px #e5e7eb;">
+                                    <div style="font-weight:700;font-size:20px;">Squats</div>
+                                    <div style="color:#666;font-size:13px;margin-bottom:8px;">Set 2 of 5</div>
+                                    <div class="progress-bar" style="margin-bottom:10px;height:10px;width:100%;background:#e5e7eb;border-radius:5px;overflow:hidden;">
+                                        <div class="progress-fill" style="width:40%;height:100%;background:linear-gradient(45deg,#10B981,#3B82F6);"></div>
+                                    </div>
+                                    <div class="stats" style="margin-bottom:10px;display:flex;gap:8px;justify-content:space-between;">
+                                        <span style="background:#F3F4F6;padding:4px 10px;border-radius:6px;font-weight:600;">8 reps</span>
+                                        <span style="background:#F3F4F6;padding:4px 10px;border-radius:6px;font-weight:600;">225 lbs</span>
+                                    </div>
+                                    <button style="background:#3B82F6;color:#fff;border:none;border-radius:8px;padding:10px 0;font-size:15px;font-weight:700;width:100%;display:flex;align-items:center;justify-content:center;gap:8px;"><span style="font-size:16px;">✔️</span>Complete Set</button>
+                                </div>
+                                <div style="background:#fff;border-radius:12px;padding:10px 16px;box-shadow:0 2px 8px #e5e7eb;margin-top:8px;display:flex;align-items:center;gap:10px;">
+                                    <span style="background:#10B981;color:#fff;border-radius:6px;padding:2px 8px;font-size:12px;">Rest</span>
+                                    <span style="color:#666;font-size:13px;">60s</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Exercise Library -->
+                <div class="screenshot-card" data-aos="fade-right">
+                    <div class="phone-mockup">
+                        <div class="phone-screen">
+                            <div class="app-header">
+                                <div class="app-title" style="display:flex;align-items:center;gap:6px;"><span style="color:#F59E42;font-size:18px;">📚</span>Exercises</div>
+                                <div class="app-status" style="background:#F59E42;color:#fff;">Browse</div>
+                            </div>
+                            <div class="app-content" style="flex-direction:column;align-items:stretch;gap:8px;background:#F3F4F6;padding:0;">
+                                <div style="background:#fff;border-radius:12px;padding:12px 14px;display:flex;align-items:center;justify-content:space-between;box-shadow:0 2px 8px #e5e7eb;margin-bottom:2px;">
+                                    <div style="display:flex;align-items:center;gap:10px;">
+                                        <span style="font-size:18px;color:#3B82F6;">💪</span>
+                                        <span style="font-weight:700;">Bench Press</span>
+                                    </div>
+                                    <div style="display:flex;gap:4px;">
+                                        <span style="background:#3B82F6;color:#fff;border-radius:6px;padding:2px 8px;font-size:12px;">Chest</span>
+                                        <span style="background:#10B981;color:#fff;border-radius:6px;padding:2px 8px;font-size:12px;">Beginner</span>
+                                    </div>
+                                </div>
+                                <div style="background:#fff;border-radius:12px;padding:12px 14px;display:flex;align-items:center;justify-content:space-between;box-shadow:0 2px 8px #e5e7eb;margin-bottom:2px;">
+                                    <div style="display:flex;align-items:center;gap:10px;">
+                                        <span style="font-size:18px;color:#F59E42;">🏋️‍♂️</span>
+                                        <span style="font-weight:700;">Deadlift</span>
+                                    </div>
+                                    <div style="display:flex;gap:4px;">
+                                        <span style="background:#F59E42;color:#fff;border-radius:6px;padding:2px 8px;font-size:12px;">Back</span>
+                                        <span style="background:#F59E42;color:#fff;border-radius:6px;padding:2px 8px;font-size:12px;">Intermediate</span>
+                                    </div>
+                                </div>
+                                <div style="background:#fff;border-radius:12px;padding:12px 14px;display:flex;align-items:center;justify-content:space-between;box-shadow:0 2px 8px #e5e7eb;">
+                                    <div style="display:flex;align-items:center;gap:10px;">
+                                        <span style="font-size:18px;color:#10B981;">🦵</span>
+                                        <span style="font-weight:700;">Lunges</span>
+                                    </div>
+                                    <div style="display:flex;gap:4px;">
+                                        <span style="background:#10B981;color:#fff;border-radius:6px;padding:2px 8px;font-size:12px;">Legs</span>
+                                        <span style="background:#3B82F6;color:#fff;border-radius:6px;padding:2px 8px;font-size:12px;">Beginner</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- AI Routine Builder -->
+                <div class="screenshot-card" data-aos="fade-left">
+                    <div class="phone-mockup">
+                        <div class="phone-screen">
+                            <div class="app-header">
+                                <div class="app-title" style="display:flex;align-items:center;gap:6px;"><span style="color:#8B5CF6;font-size:18px;">🤖</span>AI Builder</div>
+                                <div class="app-status" style="background:#8B5CF6;color:#fff;">AI</div>
+                            </div>
+                            <div class="app-content" style="flex-direction:column;align-items:stretch;gap:12px;background:#F3F4F6;padding:0;">
+                                <div style="font-weight:700;font-size:16px;margin-bottom:2px;">Build a Routine</div>
+                                <input type="text" placeholder="e.g. 3-day split" style="padding:10px 12px;border-radius:8px;border:1px solid #ddd;font-size:14px;outline:none;margin-bottom:2px;">
+                                <button style="background:#3B82F6;color:#fff;border:none;border-radius:8px;padding:10px 0;font-size:15px;font-weight:700;">Generate</button>
+                                <div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:4px;">
+                                    <span style="background:#10B981;color:#fff;border-radius:12px;padding:6px 14px;font-size:13px;">Push/Pull/Legs</span>
+                                    <span style="background:#3B82F6;color:#fff;border-radius:12px;padding:6px 14px;font-size:13px;">Full Body</span>
+                                    <span style="background:#F59E42;color:#fff;border-radius:12px;padding:6px 14px;font-size:13px;">Upper/Lower</span>
+                                </div>
+                                <div style="background:#fff;border-radius:10px;padding:10px 14px;margin-top:8px;box-shadow:0 2px 8px #e5e7eb;">
+                                    <div style="font-size:14px;color:#374151;">AI Suggestion: <span style="font-weight:600;color:#3B82F6;">"Upper Body Strength"</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section id="tech" class="technology">
+        <div class="container">
+            <div class="section-header">
+                <h2>Built with Modern Technology</h2>
+                <p>Leveraging the latest tools and frameworks for optimal performance</p>
+            </div>
+            <div class="tech-grid">
+                <div class="tech-card" data-aos="zoom-in">
+                    <div class="tech-icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3>React Native</h3>
+                    <p>Cross-platform mobile development with Expo SDK 53</p>
+                </div>
+                <div class="tech-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="tech-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Supabase</h3>
+                    <p>PostgreSQL backend with real-time sync and authentication</p>
+                </div>
+                <div class="tech-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="tech-icon">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <h3>TypeScript</h3>
+                    <p>Type-safe development with enhanced developer experience</p>
+                </div>
+                <div class="tech-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="tech-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Tailwind CSS</h3>
+                    <p>Tailwind CSS for React Native styling</p>
+                </div>
+                <div class="tech-card" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="tech-icon">
+                        <i class="fas fa-route"></i>
+                    </div>
+                    <h3>Expo Router</h3>
+                    <p>File-based routing with deep linking support</p>
+                </div>
+                <div class="tech-card" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="tech-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Custom AI</h3>
+                    <p>Custom AI-powered exercise categorization</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get Started Today</h2>
+                <p>Ready to transform your fitness journey?</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-code"></i>
+                        <div>
+                            <h3>Open Source</h3>
+                            <p>Built with modern React Native and Expo</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-mobile-alt"></i>
+                        <div>
+                            <h3>Cross Platform</h3>
+                            <p>Works on iOS, Android, and Web</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <div>
+                            <h3>Secure</h3>
+                            <p>Built-in authentication and data protection</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-cta">
+                    <h3>Ready to build your own?</h3>
+                    <p>Clone the repository and start building your fitness tracking app today.</p>
+                    <button class="btn btn-primary" onclick="openGitHub()">
+                        <i class="fab fa-github"></i>
+                        View on GitHub
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-dumbbell"></i>
+                    <span>WorkoutMix</span>
+                </div>
+                <p>Built with ❤️ using React Native and Expo</p>
+                <div class="footer-links">
+                    <a href="#features">Features</a>
+                    <a href="#screenshots">Screenshots</a>
+                    <a href="#tech">Technology</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html> 

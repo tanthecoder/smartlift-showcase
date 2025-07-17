@@ -1,0 +1,29 @@
+@media (max-width: 900px) {
+  .hero-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 2em;
+  }
+  .screenshots-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+    gap: 2em;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    padding: 0 10px;
+  }
+  .hero-title {
+    font-size: 2rem;
+  }
+  .screenshots .section-header h2 {
+    font-size: 2rem;
+  }
+  .screenshots-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .screenshot-card {
+    padding: 1rem;
+  }
+} 
