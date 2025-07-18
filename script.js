@@ -505,6 +505,21 @@ document.addEventListener('DOMContentLoaded', function() {
             border-color: #33364D !important;
             box-shadow: 0 4px 32px rgba(16,185,129,0.10);
         }
+        
+        /* Dark mode specific styling for the dark mode toggle card */
+        body.darkmode #darkmode-toggle-card::before {
+            background: linear-gradient(45deg, #3B82F6, #10B981) !important;
+            color: #fff !important;
+        }
+        
+        body.darkmode #darkmode-toggle-card:hover {
+            border-color: #10B981 !important;
+            box-shadow: 0 15px 45px rgba(16,185,129,0.25), 0 3px 10px rgba(59,130,246,0.20) !important;
+        }
+        
+        body.darkmode #darkmode-toggle-card::after {
+            opacity: 0.9 !important;
+        }
         body.darkmode .feature-card h3,
         body.darkmode .tech-card h3,
         body.darkmode .screenshot-title {
