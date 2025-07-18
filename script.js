@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         card.addEventListener('click', function() {
             const darkPref = localStorage.getItem('darkmode') === 'true';
-            if(!darkPref){
+            if(darkPref){
                 console.log("clicked");
                 this.style.transform = 'translateY(0) scale(1)';
             }
