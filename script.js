@@ -84,19 +84,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const featureCards = document.querySelectorAll('.feature-card');
     featureCards.forEach(card => {
         card.addEventListener('mouseenter', function() {
-            this.style.transform = 'translateY(-10px) scale(1.2)';
+            if(!window.navigator.userAgent.includes('Safari')){
+                this.style.transform = 'translateY(-10px) scale(1.2)';
+            }
         });
         
         card.addEventListener('mouseleave', function() {
             this.style.transform = 'translateY(0) scale(1)';
-        });
-
-        card.addEventListener('click', function() {
-            const darkPref = localStorage.getItem('darkmode') === 'true';
-            if(darkPref){
-                console.log("clicked");
-                this.style.transform = 'translateY(0) scale(1)';
-            }
         });
     });
     
