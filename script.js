@@ -83,6 +83,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add hover effects to feature cards
     const featureCards = document.querySelectorAll('.feature-card');
     featureCards.forEach(card => {
+        card.style.cursor = 'pointer';
         card.addEventListener('mouseenter', function() {
             // Only apply transform if browser is not Safari
             var ua = navigator.userAgent;

@@ -77,14 +77,12 @@ body {
   font-size: 0.7rem;
   font-weight: 600;
   opacity: 0;
-  transform: translateY(-10px);
   transition: all 0.3s ease;
   z-index: 10;
 }
 
 #darkmode-toggle-card:hover::before {
   opacity: 1;
-  transform: translateY(0);
 }
 
 #darkmode-toggle-card::after {
@@ -107,14 +105,7 @@ body {
     opacity: 1;
   }
 }
-
-#darkmode-toggle-card:hover {
-  transform: translateY(-12px) scale(1.05);
-  box-shadow: 0 15px 45px rgba(59,130,246,0.20), 0 3px 10px rgba(16,185,129,0.15);
-  border-color: #10B981;
-}
-
-#darkmode-toggle-card:hover .feature-icon {
+.feature-icon {
   transform: scale(1.1);
   box-shadow: 0 4px 20px rgba(59,130,246,0.20);
 }
