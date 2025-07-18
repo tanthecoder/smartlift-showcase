@@ -84,7 +84,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const featureCards = document.querySelectorAll('.feature-card');
     featureCards.forEach(card => {
         card.addEventListener('mouseenter', function() {
-            if(!window.navigator.userAgent.includes('Safari')){
+            // Only apply transform if browser is not Safari
+            var ua = navigator.userAgent;
+            var isSafari = /^((?!chrome|android).)*safari/i.test(ua);
+            if (!isSafari) {
                 this.style.transform = 'translateY(-10px) scale(1.2)';
             }
         });
@@ -367,6 +370,20 @@ function setDarkMode(enabled) {
     }
     // Swap screenshot images
     swapScreenshotImages(enabled);
+
+    // Update dark mode card icon, label, and hint
+    const icon = document.getElementById('darkmode-icon');
+    const label = document.getElementById('darkmode-label');
+    const hint = document.getElementById('darkmode-hint');
+    if (icon && label && hint) {
+        if (enabled) {
+            icon.className = 'fas fa-moon';
+            label.textContent = 'Dark Mode';
+        } else {
+            icon.className = 'fas fa-sun';
+            label.textContent = 'Light Mode';
+        }
+    }
 }
 
 function swapScreenshotImages(isDark) {
